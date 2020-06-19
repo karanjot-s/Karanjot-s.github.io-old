@@ -161,10 +161,23 @@ header nav ul li a:hover {
           animation: comeinback 1s 1 0s linear;
 }
 
+@media (max-width: 950px) {
+  #intro::before {
+    background-position: -115px -210px;
+    background-size: 1503px;
+  }
+}
+
 #intro {
   height: 100vh;
   width: 100%;
   cursor: default;
+}
+
+@media (max-width: 950px) {
+  #intro {
+    height: 62vh;
+  }
 }
 
 #intro #div1 {
@@ -173,6 +186,12 @@ header nav ul li a:hover {
   left: 10px;
   -webkit-animation: comein 1s 1 0s linear;
           animation: comein 1s 1 0s linear;
+}
+
+@media (max-width: 950px) {
+  #intro #div1 {
+    margin-top: -100px;
+  }
 }
 
 #intro #div1 h3 {
@@ -187,12 +206,24 @@ header nav ul li a:hover {
   margin-left: 24px;
 }
 
+@media (max-width: 950px) {
+  #intro #div1 #span1 {
+    font-size: 36px;
+  }
+}
+
 #intro #div2 {
   position: absolute;
   top: 315px;
   right: 35px;
   -webkit-animation: comein 1s 1 0s linear;
           animation: comein 1s 1 0s linear;
+}
+
+@media (max-width: 950px) {
+  #intro #div2 {
+    left: 10px;
+  }
 }
 
 #intro #div2 #span3 {
@@ -203,6 +234,12 @@ header nav ul li a:hover {
 #intro #div2 #span2, #intro #div2 #span4 {
   font-size: 44px;
   display: block;
+}
+
+@media (max-width: 950px) {
+  #intro #div2 #span2, #intro #div2 #span4 {
+    font-size: 36px;
+  }
 }
 
 #intro #div2 #span2 span, #intro #div2 #span4 span {

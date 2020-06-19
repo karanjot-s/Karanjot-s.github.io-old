@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+// Responsive
+$tablet: 950px;
+$phone: 415px;
+
+@mixin tablet {
+	@media (max-width: #{$tablet}) {
+		@content;
+	}	
+}
+
+@mixin phone {
+	@media (max-width: #{$phone}) {
+		@content;
+	}	
+}
+
 // Animations
 @keyframes comein {
 	0% {
@@ -116,6 +132,11 @@ header {
 	z-index: -1;
 	opacity: 0.27;
 	animation: comeinback 1s 1 0s linear;
+
+	@include tablet{
+		background-position: -115px -210px;
+    	background-size: 1503px;
+	}
 }
 
 #intro{
@@ -123,11 +144,19 @@ header {
 	width: 100%;
 	cursor: default;
 
+	@include tablet{
+		height: 62vh;
+	}
+
 	#div1{
 		position: absolute;
 		top: 228px;
 		left: 10px;
 		animation: comein 1s 1 0s linear;
+
+		@include tablet{
+			margin-top: -100px;
+		}
 		
 		h3{
 			font-size: 60px;
@@ -138,7 +167,11 @@ header {
 			font-size: 50px;
 			display: block;
 			margin-top: 5px;
-    		margin-left: 24px;
+			margin-left: 24px;
+			
+			@include tablet{
+				font-size: 36px;
+			}
 		}
 	}
 
@@ -147,6 +180,10 @@ header {
 		top: 315px;
 		right: 35px;
 		animation: comein 1s 1 0s linear;
+
+		@include tablet{
+			left: 10px;
+		}
 		
 		#span3{
 			font-size: 35px;
@@ -156,6 +193,10 @@ header {
 		#span2, #span4{
 			font-size: 44px;
 			display: block;
+			
+			@include tablet{
+				font-size: 36px;
+			}
 
 			span{
 				color: wheat;
