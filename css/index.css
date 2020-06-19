@@ -1,4 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@-webkit-keyframes comein {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes comein {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes comeinback {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.14;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.27;
+  }
+}
+
+@keyframes comeinback {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.14;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.27;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +102,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  width: 100%;
 }
 
 header h1 {
@@ -80,6 +145,74 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: wheat;
+}
+
+#intro::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("../img/main/bg1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.27;
+  -webkit-animation: comeinback 1s 1 0s linear;
+          animation: comeinback 1s 1 0s linear;
+}
+
+#intro {
+  height: 100vh;
+  width: 100%;
+  cursor: default;
+}
+
+#intro #div1 {
+  position: absolute;
+  top: 228px;
+  left: 10px;
+  -webkit-animation: comein 1s 1 0s linear;
+          animation: comein 1s 1 0s linear;
+}
+
+#intro #div1 h3 {
+  font-size: 60px;
+  color: wheat;
+}
+
+#intro #div1 #span1 {
+  font-size: 50px;
+  display: block;
+  margin-top: 5px;
+  margin-left: 24px;
+}
+
+#intro #div2 {
+  position: absolute;
+  top: 315px;
+  right: 35px;
+  -webkit-animation: comein 1s 1 0s linear;
+          animation: comein 1s 1 0s linear;
+}
+
+#intro #div2 #span3 {
+  font-size: 35px;
+  display: block;
+}
+
+#intro #div2 #span2, #intro #div2 #span4 {
+  font-size: 44px;
+  display: block;
+}
+
+#intro #div2 #span2 span, #intro #div2 #span4 span {
+  color: wheat;
+  font-weight: bolder;
+}
+
+#intro #div2 #span2 span:hover, #intro #div2 #span4 span:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 footer {
