@@ -366,6 +366,7 @@ header nav ul li a:hover {
           animation-delay: 0s;
   -webkit-animation-direction: normal;
           animation-direction: normal;
+  color: white;
 }
 
 #projects-head::before {
