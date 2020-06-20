@@ -84,11 +84,15 @@ header {
 	width: 100%;
 
 	h1 {
-		padding: 28px 61px;
+		padding: 21px 10px;
 
 		a {
 			color: white;
 			text-decoration: none;
+
+			@include phone{
+				font-size: 17px;
+			}
 		}
 
 		a:hover {
@@ -97,7 +101,7 @@ header {
 	}
 
 	nav {
-		margin: 0 43px;
+		margin: 0 5px;
 		margin-left: auto;
 
 		ul {
@@ -106,7 +110,7 @@ header {
 			justify-content: center;
 
 			li {
-				padding: 0 10px;
+				padding: 0 5px;
 
 				a {
 					color: #a0a0a0;
@@ -138,6 +142,10 @@ header {
 		background-position: -115px -210px;
     	background-size: 1503px;
 	}
+
+	@include phone{
+		background: none;
+	}
 }
 
 #intro{
@@ -149,6 +157,22 @@ header {
 		height: 62vh;
 	}
 
+	#phone-img{
+		display: none;
+
+		@include phone{
+			position: absolute;
+			top: 120px;
+			display: block;
+			width: 100%;
+		}
+
+		img{
+			width: 30%;
+			margin: 0 35%;
+		}
+	}
+
 	#div1{
 		position: absolute;
 		top: 228px;
@@ -157,6 +181,13 @@ header {
 
 		@include tablet{
 			margin-top: -100px;
+		}
+
+		@include phone{
+			left: 0;
+			width: 100%;
+			text-align: center;
+			top: 387px;
 		}
 		
 		h3{
@@ -184,6 +215,13 @@ header {
 
 		@include tablet{
 			left: 10px;
+		}
+
+		@include phone{
+			left: 0;
+			width: 100%;
+			text-align: center;
+			top: 426px;
 		}
 		
 		#span3{
