@@ -95,7 +95,11 @@ header {
 	width: 100%;
 
 	h1 {
-		padding: 21px 10px;
+		padding: 21px 60px;
+
+		@include phone{
+			padding: 21px 10px
+		}
 
 		a {
 			color: white;
@@ -112,8 +116,12 @@ header {
 	}
 
 	nav {
-		margin: 0 5px;
+		margin: 0 40px;
 		margin-left: auto;
+
+		@include phone{
+			margin: 0px 5px
+		}
 
 		ul {
 			list-style: none;
