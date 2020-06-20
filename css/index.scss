@@ -258,6 +258,10 @@ footer {
 		margin: 40px 100px;
 		font-size: 20px;
 		color: #c2c2c2;
+
+		@include phone{
+			margin: 20px 22px;
+		}
 	}
 
 	button {
@@ -268,6 +272,10 @@ footer {
 		border: none;
 		font-size: 16px;
 		outline: none;
+
+		@include phone{
+			margin-right: 20px;
+		}
 	}
 
 	button:hover {

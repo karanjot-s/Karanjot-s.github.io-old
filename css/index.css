@@ -317,6 +317,12 @@ footer span {
   color: #c2c2c2;
 }
 
+@media (max-width: 415px) {
+  footer span {
+    margin: 20px 22px;
+  }
+}
+
 footer button {
   margin: 0 80px;
   margin-left: auto;
@@ -325,6 +331,12 @@ footer button {
   border: none;
   font-size: 16px;
   outline: none;
+}
+
+@media (max-width: 415px) {
+  footer button {
+    margin-right: 20px;
+  }
 }
 
 footer button:hover {
