@@ -62,6 +62,36 @@
   }
 }
 
+@-webkit-keyframes arrowdown {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes arrowdown {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -299,6 +329,129 @@ header nav ul li a:hover {
 #intro #div2 #span2 span:hover, #intro #div2 #span4 span:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#projects-head {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#projects-head h3 {
+  font-size: 85px;
+}
+
+#projects-head svg {
+  -webkit-animation-name: arrowdown;
+          animation-name: arrowdown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+#projects-head::before {
+  content: "";
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/main/bg-2.jpg) no-repeat center center/cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.project {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project div h4 {
+  font-size: 80px;
+  margin: 40px 0;
+}
+
+.project div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project div div a {
+  padding: 20px 50px;
+  background: none;
+  border: 3px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.project div div .gtp {
+  background-color: rgba(0, 0, 255, 0.116);
+  border-color: blue;
+}
+
+.project div div .gtp:hover {
+  background-color: blue;
+  color: white;
+}
+
+.project div div .download {
+  background-color: rgba(0, 128, 0, 0.116);
+  border-color: green;
+}
+
+.project div div .download:hover {
+  background-color: green;
+  color: white;
+}
+
+#flappy::before {
+  content: "";
+  position: absolute;
+  top: 200vh;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/main/flappybird-bg.png) no-repeat center center/cover;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.4;
 }
 
 footer {
