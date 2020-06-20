@@ -37,12 +37,12 @@
     opacity: 0;
   }
   50% {
-    opacity: 0.14;
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    opacity: 0.27;
+    opacity: 0.5;
   }
 }
 
@@ -53,12 +53,12 @@
     opacity: 0;
   }
   50% {
-    opacity: 0.14;
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
-    opacity: 0.27;
+    opacity: 0.5;
   }
 }
 
@@ -156,7 +156,7 @@ header nav ul li a:hover {
   height: 100vh;
   width: 100%;
   z-index: -1;
-  opacity: 0.27;
+  opacity: 0.5;
   -webkit-animation: comeinback 1s 1 0s linear;
           animation: comeinback 1s 1 0s linear;
 }
