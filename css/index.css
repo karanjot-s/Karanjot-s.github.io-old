@@ -137,7 +137,13 @@ header {
 }
 
 header h1 {
-  padding: 21px 10px;
+  padding: 21px 60px;
+}
+
+@media (max-width: 415px) {
+  header h1 {
+    padding: 21px 10px;
+  }
 }
 
 header h1 a {
@@ -156,8 +162,14 @@ header h1 a:hover {
 }
 
 header nav {
-  margin: 0 5px;
+  margin: 0 40px;
   margin-left: auto;
+}
+
+@media (max-width: 415px) {
+  header nav {
+    margin: 0px 5px;
+  }
 }
 
 header nav ul {
