@@ -95,7 +95,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -140,7 +140,7 @@ header h1 {
   padding: 21px 60px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   header h1 {
     padding: 21px 10px;
   }
@@ -151,7 +151,7 @@ header h1 a {
   text-decoration: none;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   header h1 a {
     font-size: 17px;
   }
@@ -166,9 +166,9 @@ header nav {
   margin-left: auto;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   header nav {
-    margin: 0px 5px;
+    margin-right: 5px;
   }
 }
 
@@ -212,13 +212,15 @@ header nav ul li a:hover {
 
 @media (max-width: 950px) {
   #intro::before {
+    height: 62vh;
     background-position: -115px -210px;
     background-size: 1503px;
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   #intro::before {
+    height: 74vh;
     background: none;
   }
 }
@@ -235,11 +237,17 @@ header nav ul li a:hover {
   }
 }
 
+@media (max-width: 425px) {
+  #intro {
+    height: 100vh;
+  }
+}
+
 #intro #phone-img {
   display: none;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   #intro #phone-img {
     position: absolute;
     top: 120px;
@@ -267,7 +275,7 @@ header nav ul li a:hover {
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   #intro #div1 {
     left: 0;
     width: 100%;
@@ -276,9 +284,21 @@ header nav ul li a:hover {
   }
 }
 
+@media (max-width: 360px) {
+  #intro #div1 {
+    top: 345px;
+  }
+}
+
 #intro #div1 h3 {
   font-size: 60px;
   color: wheat;
+}
+
+@media (max-width: 360px) {
+  #intro #div1 h3 {
+    font-size: 37px;
+  }
 }
 
 #intro #div1 #span1 {
@@ -291,6 +311,12 @@ header nav ul li a:hover {
 @media (max-width: 950px) {
   #intro #div1 #span1 {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 360px) {
+  #intro #div1 #span1 {
+    margin-left: 0;
   }
 }
 
@@ -308,7 +334,7 @@ header nav ul li a:hover {
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   #intro #div2 {
     left: 0;
     width: 100%;
@@ -317,9 +343,21 @@ header nav ul li a:hover {
   }
 }
 
+@media (max-width: 360px) {
+  #intro #div2 {
+    top: 376px;
+  }
+}
+
 #intro #div2 #span3 {
   font-size: 35px;
   display: block;
+}
+
+@media (max-width: 360px) {
+  #intro #div2 #span3 {
+    font-size: 30px;
+  }
 }
 
 #intro #div2 #span2, #intro #div2 #span4 {
@@ -330,6 +368,12 @@ header nav ul li a:hover {
 @media (max-width: 950px) {
   #intro #div2 #span2, #intro #div2 #span4 {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 360px) {
+  #intro #div2 #span2, #intro #div2 #span4 {
+    font-size: 32px;
   }
 }
 
@@ -359,10 +403,29 @@ header nav ul li a:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  background-color: #1f1f1f;
+}
+
+@media (max-width: 950px) {
+  #projects-head {
+    height: 38vh;
+  }
+}
+
+@media (max-width: 425px) {
+  #projects-head {
+    height: 50vh;
+  }
 }
 
 #projects-head h3 {
   font-size: 85px;
+}
+
+@media (max-width: 425px) {
+  #projects-head h3 {
+    font-size: 40px;
+  }
 }
 
 #projects-head svg {
@@ -381,18 +444,6 @@ header nav ul li a:hover {
   color: white;
 }
 
-#projects-head::before {
-  content: "";
-  position: absolute;
-  top: 100vh;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background: url(../img/main/bg-2.jpg) no-repeat center center/cover;
-  opacity: 0.2;
-  z-index: -1;
-}
-
 .project {
   height: 100vh;
   display: -webkit-box;
@@ -406,12 +457,33 @@ header nav ul li a:hover {
           align-items: center;
 }
 
-.project div h4 {
-  font-size: 80px;
-  margin: 40px 0;
+@media (max-width: 950px) {
+  .project {
+    height: 50vh;
+  }
 }
 
-.project div div {
+@media (max-width: 425px) {
+  .project .div3 {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+}
+
+.project .div3 h4 {
+  font-size: 80px;
+  margin: 40px 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+@media (max-width: 425px) {
+  .project .div3 h4 {
+    font-size: 45px;
+  }
+}
+
+.project .div3 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,7 +495,20 @@ header nav ul li a:hover {
           align-items: center;
 }
 
-.project div div a {
+@media (max-width: 425px) {
+  .project .div3 div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-top: 10vh;
+  }
+}
+
+.project .div3 div a {
   padding: 20px 50px;
   background: none;
   border: 3px solid white;
@@ -432,24 +517,53 @@ header nav ul li a:hover {
   border-radius: 10px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 50px;
 }
 
-.project div div .gtp {
+@media (max-width: 425px) {
+  .project .div3 div a {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .project .div3 div a {
+    padding: 10px 36px;
+  }
+}
+
+.project .div3 div .gtp {
   background-color: rgba(0, 0, 255, 0.116);
   border-color: blue;
 }
 
-.project div div .gtp:hover {
+@media (max-width: 425px) {
+  .project .div3 div .gtp {
+    background-color: blue;
+    color: white;
+  }
+}
+
+.project .div3 div .gtp:hover {
   background-color: blue;
   color: white;
 }
 
-.project div div .download {
+.project .div3 div .download {
   background-color: rgba(0, 128, 0, 0.116);
   border-color: green;
 }
 
-.project div div .download:hover {
+@media (max-width: 425px) {
+  .project .div3 div .download {
+    margin-top: 2vh;
+    background-color: green;
+    color: white;
+  }
+}
+
+.project .div3 div .download:hover {
   background-color: green;
   color: white;
 }
@@ -465,6 +579,21 @@ header nav ul li a:hover {
   background-attachment: fixed;
   z-index: -1;
   opacity: 0.4;
+}
+
+@media (max-width: 950px) {
+  #flappy::before {
+    top: 100vh;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 425px) {
+  #flappy::before {
+    top: 150vh;
+    background-position-x: -29vh;
+    background-position-y: 10vh;
+  }
 }
 
 footer {
@@ -483,7 +612,7 @@ footer span {
   color: #c2c2c2;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   footer span {
     margin: 20px 22px;
   }
@@ -499,7 +628,7 @@ footer button {
   outline: none;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   footer button {
     margin-right: 20px;
   }
