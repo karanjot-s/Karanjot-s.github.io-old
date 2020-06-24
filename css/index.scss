@@ -151,7 +151,7 @@ header {
 	}
 }
 
-#intro::before{
+section#intro::before{
 	position: absolute;
 	content: "";
 	top: 0;
@@ -176,7 +176,7 @@ header {
 	}
 }
 
-#intro{
+section#intro{
 	height: 100vh;
 	width: 100%;
 	cursor: default;
@@ -189,7 +189,7 @@ header {
 		height: 100vh;
 	}
 
-	#phone-img{
+	div#phone-img{
 		display: none;
 
 		@include phone{
@@ -205,7 +205,7 @@ header {
 		}
 	}
 
-	#div1{
+	div#div1{
 		position: absolute;
 		top: 228px;
 		left: 10px;
@@ -235,7 +235,7 @@ header {
 			}
 		}
 
-		#span1{
+		span#span1{
 			font-size: 50px;
 			display: block;
 			margin-top: 5px;
@@ -251,7 +251,7 @@ header {
 		}
 	}
 
-	#div2{
+	div#div2{
 		position: absolute;
 		top: 315px;
 		right: 35px;
@@ -272,7 +272,7 @@ header {
 			top: 376px;
 		}
 		
-		#span3{
+		span#span3{
 			font-size: 35px;
 			display: block;
 
@@ -281,7 +281,7 @@ header {
 			}
 		}
 
-		#span2, #span4{
+		span#span2, span#span4{
 			font-size: 44px;
 			display: block;
 			
@@ -305,7 +305,7 @@ header {
 	}
 }
 
-#projects-head{
+div#projects-head{
 	color: white;
 	display: flex;
 	flex-flow: column;
@@ -342,7 +342,7 @@ header {
 	}
 }
 
-.project{
+section.project{
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -352,7 +352,7 @@ header {
 		height: 50vh;
 	}
 
-	.div3{
+	div.div3{
 
 		@include phone{
 			width: 100%;
@@ -401,7 +401,7 @@ header {
 				}
 			}
 
-			.gtp{
+			a.gtp{
 				background-color: rgba(0, 0, 255, 0.116);
 				border-color: blue;
 
@@ -411,12 +411,12 @@ header {
 				}
 			}
 
-			.gtp:hover{
+			a.gtp:hover{
 				background-color: blue;
 				color: white;
 			}
 
-			.download{
+			a.download{
 				background-color: rgba(0, 128, 0, 0.116);
 				border-color: green;
 
@@ -427,7 +427,7 @@ header {
 				}
 			}
 
-			.download:hover{
+			a.download:hover{
 				background-color: green;
 				color: white;
 			}
@@ -435,7 +435,7 @@ header {
 	}
 }
 
-#flappy::before{
+section#flappy::before{
 	content: "";
 	position: absolute;
 	top: 200vh;
@@ -455,7 +455,44 @@ header {
 	@include phone{
 		top: 150vh;
 		background-position-x: -29vh;
-    	background-position-y: 10vh;
+	}
+}
+
+section#contact{
+	height: 50vh;
+	text-align: center;
+
+	div{
+		padding-top: 15vh;
+
+		@include sphone{
+			padding-top: 10vh;
+		}
+
+		h2{
+			font-size: 45px;
+
+			@include phone{
+				font-size: 30px;
+			}
+		}
+
+		a{
+			text-decoration: none;
+			border: 3px solid red;
+			padding: 15px 25px;
+			font-size: 20px;
+			color: white;
+			position: relative;
+			top: 9vh;
+			border-radius: 10px;
+			transition: 0.25s;
+		}
+
+		a:hover{
+			background-color: red;
+			font-weight: bold;
+		}
 	}
 }
 

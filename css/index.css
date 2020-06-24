@@ -195,7 +195,7 @@ header nav ul li a:hover {
   color: wheat;
 }
 
-#intro::before {
+section#intro::before {
   position: absolute;
   content: "";
   top: 0;
@@ -211,7 +211,7 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 950px) {
-  #intro::before {
+  section#intro::before {
     height: 62vh;
     background-position: -115px -210px;
     background-size: 1503px;
@@ -219,36 +219,36 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 425px) {
-  #intro::before {
+  section#intro::before {
     height: 74vh;
     background: none;
   }
 }
 
-#intro {
+section#intro {
   height: 100vh;
   width: 100%;
   cursor: default;
 }
 
 @media (max-width: 950px) {
-  #intro {
+  section#intro {
     height: 62vh;
   }
 }
 
 @media (max-width: 425px) {
-  #intro {
+  section#intro {
     height: 100vh;
   }
 }
 
-#intro #phone-img {
+section#intro div#phone-img {
   display: none;
 }
 
 @media (max-width: 425px) {
-  #intro #phone-img {
+  section#intro div#phone-img {
     position: absolute;
     top: 120px;
     display: block;
@@ -256,12 +256,12 @@ header nav ul li a:hover {
   }
 }
 
-#intro #phone-img img {
+section#intro div#phone-img img {
   width: 30%;
   margin: 0 35%;
 }
 
-#intro #div1 {
+section#intro div#div1 {
   position: absolute;
   top: 228px;
   left: 10px;
@@ -270,13 +270,13 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 950px) {
-  #intro #div1 {
+  section#intro div#div1 {
     margin-top: -100px;
   }
 }
 
 @media (max-width: 425px) {
-  #intro #div1 {
+  section#intro div#div1 {
     left: 0;
     width: 100%;
     text-align: center;
@@ -285,23 +285,23 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 360px) {
-  #intro #div1 {
+  section#intro div#div1 {
     top: 345px;
   }
 }
 
-#intro #div1 h3 {
+section#intro div#div1 h3 {
   font-size: 60px;
   color: wheat;
 }
 
 @media (max-width: 360px) {
-  #intro #div1 h3 {
+  section#intro div#div1 h3 {
     font-size: 37px;
   }
 }
 
-#intro #div1 #span1 {
+section#intro div#div1 span#span1 {
   font-size: 50px;
   display: block;
   margin-top: 5px;
@@ -309,18 +309,18 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 950px) {
-  #intro #div1 #span1 {
+  section#intro div#div1 span#span1 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 360px) {
-  #intro #div1 #span1 {
+  section#intro div#div1 span#span1 {
     margin-left: 0;
   }
 }
 
-#intro #div2 {
+section#intro div#div2 {
   position: absolute;
   top: 315px;
   right: 35px;
@@ -329,13 +329,13 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 950px) {
-  #intro #div2 {
+  section#intro div#div2 {
     left: 10px;
   }
 }
 
 @media (max-width: 425px) {
-  #intro #div2 {
+  section#intro div#div2 {
     left: 0;
     width: 100%;
     text-align: center;
@@ -344,50 +344,50 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 360px) {
-  #intro #div2 {
+  section#intro div#div2 {
     top: 376px;
   }
 }
 
-#intro #div2 #span3 {
+section#intro div#div2 span#span3 {
   font-size: 35px;
   display: block;
 }
 
 @media (max-width: 360px) {
-  #intro #div2 #span3 {
+  section#intro div#div2 span#span3 {
     font-size: 30px;
   }
 }
 
-#intro #div2 #span2, #intro #div2 #span4 {
+section#intro div#div2 span#span2, section#intro div#div2 span#span4 {
   font-size: 44px;
   display: block;
 }
 
 @media (max-width: 950px) {
-  #intro #div2 #span2, #intro #div2 #span4 {
+  section#intro div#div2 span#span2, section#intro div#div2 span#span4 {
     font-size: 36px;
   }
 }
 
 @media (max-width: 360px) {
-  #intro #div2 #span2, #intro #div2 #span4 {
+  section#intro div#div2 span#span2, section#intro div#div2 span#span4 {
     font-size: 32px;
   }
 }
 
-#intro #div2 #span2 span, #intro #div2 #span4 span {
+section#intro div#div2 span#span2 span, section#intro div#div2 span#span4 span {
   color: wheat;
   font-weight: bolder;
 }
 
-#intro #div2 #span2 span:hover, #intro #div2 #span4 span:hover {
+section#intro div#div2 span#span2 span:hover, section#intro div#div2 span#span4 span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-#projects-head {
+div#projects-head {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,28 +407,28 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 950px) {
-  #projects-head {
+  div#projects-head {
     height: 38vh;
   }
 }
 
 @media (max-width: 425px) {
-  #projects-head {
+  div#projects-head {
     height: 50vh;
   }
 }
 
-#projects-head h3 {
+div#projects-head h3 {
   font-size: 85px;
 }
 
 @media (max-width: 425px) {
-  #projects-head h3 {
+  div#projects-head h3 {
     font-size: 40px;
   }
 }
 
-#projects-head svg {
+div#projects-head svg {
   -webkit-animation-name: arrowdown;
           animation-name: arrowdown;
   -webkit-animation-duration: 1s;
@@ -444,7 +444,7 @@ header nav ul li a:hover {
   color: white;
 }
 
-.project {
+section.project {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -458,32 +458,32 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 950px) {
-  .project {
+  section.project {
     height: 50vh;
   }
 }
 
 @media (max-width: 425px) {
-  .project .div3 {
+  section.project div.div3 {
     width: 100%;
     text-align: center;
     height: 100%;
   }
 }
 
-.project .div3 h4 {
+section.project div.div3 h4 {
   font-size: 80px;
   margin: 40px 0;
   font-family: 'Nunito', sans-serif;
 }
 
 @media (max-width: 425px) {
-  .project .div3 h4 {
+  section.project div.div3 h4 {
     font-size: 45px;
   }
 }
 
-.project .div3 div {
+section.project div.div3 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,7 +496,7 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 425px) {
-  .project .div3 div {
+  section.project div.div3 div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -508,7 +508,7 @@ header nav ul li a:hover {
   }
 }
 
-.project .div3 div a {
+section.project div.div3 div a {
   padding: 20px 50px;
   background: none;
   border: 3px solid white;
@@ -522,53 +522,53 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 425px) {
-  .project .div3 div a {
+  section.project div.div3 div a {
     margin-top: 0;
   }
 }
 
 @media (max-width: 360px) {
-  .project .div3 div a {
+  section.project div.div3 div a {
     padding: 10px 36px;
   }
 }
 
-.project .div3 div .gtp {
+section.project div.div3 div a.gtp {
   background-color: rgba(0, 0, 255, 0.116);
   border-color: blue;
 }
 
 @media (max-width: 425px) {
-  .project .div3 div .gtp {
+  section.project div.div3 div a.gtp {
     background-color: blue;
     color: white;
   }
 }
 
-.project .div3 div .gtp:hover {
+section.project div.div3 div a.gtp:hover {
   background-color: blue;
   color: white;
 }
 
-.project .div3 div .download {
+section.project div.div3 div a.download {
   background-color: rgba(0, 128, 0, 0.116);
   border-color: green;
 }
 
 @media (max-width: 425px) {
-  .project .div3 div .download {
+  section.project div.div3 div a.download {
     margin-top: 2vh;
     background-color: green;
     color: white;
   }
 }
 
-.project .div3 div .download:hover {
+section.project div.div3 div a.download:hover {
   background-color: green;
   color: white;
 }
 
-#flappy::before {
+section#flappy::before {
   content: "";
   position: absolute;
   top: 200vh;
@@ -582,18 +582,60 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 950px) {
-  #flappy::before {
+  section#flappy::before {
     top: 100vh;
     height: 50vh;
   }
 }
 
 @media (max-width: 425px) {
-  #flappy::before {
+  section#flappy::before {
     top: 150vh;
     background-position-x: -29vh;
-    background-position-y: 10vh;
   }
+}
+
+section#contact {
+  height: 50vh;
+  text-align: center;
+}
+
+section#contact div {
+  padding-top: 15vh;
+}
+
+@media (max-width: 360px) {
+  section#contact div {
+    padding-top: 10vh;
+  }
+}
+
+section#contact div h2 {
+  font-size: 45px;
+}
+
+@media (max-width: 425px) {
+  section#contact div h2 {
+    font-size: 30px;
+  }
+}
+
+section#contact div a {
+  text-decoration: none;
+  border: 3px solid red;
+  padding: 15px 25px;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  top: 9vh;
+  border-radius: 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+section#contact div a:hover {
+  background-color: red;
+  font-weight: bold;
 }
 
 footer {

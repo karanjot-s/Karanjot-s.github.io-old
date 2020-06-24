@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@-webkit-keyframes comein {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes comein {
+  0% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes comeinback {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.35;
+  }
+}
+
+@keyframes comeinback {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.35;
+  }
+}
+
+@-webkit-keyframes arrowdown {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes arrowdown {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #101010;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #292929;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555555;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+header h1 {
+  padding: 21px 60px;
+}
+
+@media (max-width: 425px) {
+  header h1 {
+    padding: 21px 10px;
+  }
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+  header h1 a {
+    font-size: 17px;
+  }
+}
+
+header h1 a:hover {
+  border-bottom: 1px solid wheat;
+}
+
+header nav {
+  margin: 0 40px;
+  margin-left: auto;
+}
+
+@media (max-width: 425px) {
+  header nav {
+    margin-right: 5px;
+  }
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul li {
+  padding: 0 5px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: wheat;
+}
+
+section#head {
+  height: 70vh;
+  padding-top: 30vh;
+  -webkit-animation: comeinback 1s 1 0s cubic-bezier(0.54, 0.07, 0.77, 1.4);
+          animation: comeinback 1s 1 0s cubic-bezier(0.54, 0.07, 0.77, 1.4);
+}
+
+@media (max-width: 425px) {
+  section#head {
+    text-align: center;
+  }
+}
+
+section#head h1 {
+  font-size: 70px;
+  margin-left: 75px;
+}
+
+@media (max-width: 425px) {
+  section#head h1 {
+    font-size: 55px;
+    margin: 0;
+  }
+}
+
+section#head span#scroll {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+  top: 90vh;
+  -webkit-animation-name: arrowdown;
+          animation-name: arrowdown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.66, -0.01, 0.32, 1.04);
+          animation-timing-function: cubic-bezier(0.66, -0.01, 0.32, 1.04);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+section#head a#redS {
+  color: #27ff00;
+  text-decoration: none;
+}
+
+section.project::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+section.project {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.project div {
+  width: 60%;
+  text-align: center;
+}
+
+@media (max-width: 425px) {
+  section.project div {
+    width: 90%;
+  }
+}
+
+section.project div h3 {
+  font-size: 60px;
+}
+
+section.project div span {
+  font-size: 20px;
+  margin-top: 10px;
+  display: block;
+}
+
+section.project div p {
+  margin-top: 55px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+section.project div div.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+section.project div div.flex a.button {
+  color: white;
+  text-decoration: none;
+  border: 3px solid red;
+  padding: 20px 30px;
+  border-radius: 10px;
+  display: block;
+  margin: 0px 10px;
+  margin-top: 35px;
+  font-size: 18px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+section.project div div.flex a#github {
+  border-color: green;
+  background-color: rgba(0, 128, 0, 0.116);
+}
+
+section.project div div.flex a#github:hover {
+  background-color: green;
+}
+
+section.project div div.flex a#download {
+  border-color: blue;
+  background-color: rgba(0, 0, 218, 0.116);
+}
+
+section.project div div.flex a#download:hover {
+  background-color: blue;
+}
+
+section#flappy::before {
+  top: 100vh;
+  background-image: url(../../img/proj/flappy-back.png);
+}
+
+div.separation {
+  width: 100%;
+  height: 25vh;
+  background-color: #101010;
+}
+
+section#contact {
+  height: 50vh;
+  text-align: center;
+}
+
+section#contact div {
+  padding-top: 15vh;
+}
+
+@media (max-width: 360px) {
+  section#contact div {
+    padding-top: 10vh;
+  }
+}
+
+section#contact div h2 {
+  font-size: 45px;
+}
+
+@media (max-width: 425px) {
+  section#contact div h2 {
+    font-size: 30px;
+  }
+}
+
+section#contact div a {
+  text-decoration: none;
+  border: 3px solid red;
+  padding: 15px 25px;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  top: 9vh;
+  border-radius: 10px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+section#contact div a:hover {
+  background-color: red;
+  font-weight: bold;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+footer span {
+  margin: 40px 100px;
+  font-size: 20px;
+  color: #c2c2c2;
+}
+
+@media (max-width: 425px) {
+  footer span {
+    margin: 20px 22px;
+  }
+}
+
+footer button {
+  margin: 0 80px;
+  margin-left: auto;
+  background: none;
+  color: wheat;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+@media (max-width: 425px) {
+  footer button {
+    margin-right: 20px;
+  }
+}
+
+footer button:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=projects.css.map */
